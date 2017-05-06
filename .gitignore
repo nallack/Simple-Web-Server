@@ -6,6 +6,7 @@ Makefile
 cmake_install.cmake
 install_manifest.txt
 *.cmake
+
 #Additions to https://github.com/github/gitignore/blob/master/CMake.gitignore
 Testing
 compile_commands.json
@@ -16,3 +17,4 @@ https_examples
 io_test
 parse_test
 crypto_test
+*.exe

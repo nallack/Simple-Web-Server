@@ -39,7 +39,7 @@ if(OPENSSL_FOUND)
     target_link_libraries(https_examples ${CMAKE_THREAD_LIBS_INIT})
 endif()
 
-if(MSYS) #TODO: Is MSYS true when MSVC is true?
+if(WIN32)
     target_link_libraries(http_examples ws2_32 wsock32)
     if(OPENSSL_FOUND)
         target_link_libraries(https_examples ws2_32 wsock32)
